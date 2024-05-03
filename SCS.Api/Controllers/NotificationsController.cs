@@ -89,13 +89,13 @@ namespace SCS.Api.Controllers
                     };
                     _context.TeacherNotifications.Add(teacherNotification);
                     _context.SaveChanges();
-                    SubervisorNotification subervisorNotification = new SubervisorNotification
-                    {
-                        NotificationId = notificationId,
-                        ClassId = classId
-                    };
-                    _context.SubervisorNotifications.Add(subervisorNotification);
-                    _context.SaveChanges();
+                    //SubervisorNotification subervisorNotification = new SubervisorNotification
+                    //{
+                    //    NotificationId = notificationId,
+                    //    ClassId = classId
+                    //};
+                    //_context.SubervisorNotifications.Add(subervisorNotification);
+                    //_context.SaveChanges();
                 }
                 return Ok("Notification created successfully");
             }
